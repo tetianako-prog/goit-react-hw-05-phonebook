@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import logger from 'redux-logger';
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import {
@@ -39,4 +38,6 @@ const store = configureStore({
 
 const persistor = persistStore(store);
 
-export default { store, persistor };
+const contactsStore = { store, persistor };
+
+export default contactsStore;

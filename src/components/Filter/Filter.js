@@ -22,8 +22,8 @@ Filter.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({
-  value: state.contacts.filter,
+const mapStateToProps = ({ contacts: { filter } }) => ({
+  value: filter,
 });
 
 const mapDispatchToProps = dispatch => ({

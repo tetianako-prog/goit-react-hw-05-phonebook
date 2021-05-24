@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import actions from '../../redux/phonebook-actions';
+import actions from '../../../redux/phonebook-actions';
 import PropTypes from 'prop-types';
-import ContactItem from './ContactItem';
+import ContactItem from '../ContactItem/ContactItem';
 
 const ContactList = ({ contactList, onDeleteContact }) => {
   return (
